@@ -768,24 +768,26 @@
     ]
   },
   "packageFolders": {
-    "/home/sandro/.nuget/packages/": {}
+    "C:\\Users\\levani\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/sandro/Desktop/3DeFI/3DeFI.API/3DeFI.API.csproj",
+      "projectUniqueName": "C:\\Users\\levani\\Source\\Repos\\3DeFI\\3DeFI.API\\3DeFI.API.csproj",
       "projectName": "3DeFI.API",
-      "projectPath": "/home/sandro/Desktop/3DeFI/3DeFI.API/3DeFI.API.csproj",
-      "packagesPath": "/home/sandro/.nuget/packages/",
-      "outputPath": "/home/sandro/Desktop/3DeFI/3DeFI.API/obj/",
+      "projectPath": "C:\\Users\\levani\\Source\\Repos\\3DeFI\\3DeFI.API\\3DeFI.API.csproj",
+      "packagesPath": "C:\\Users\\levani\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\levani\\Source\\Repos\\3DeFI\\3DeFI.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/sandro/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\levani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -848,7 +850,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
