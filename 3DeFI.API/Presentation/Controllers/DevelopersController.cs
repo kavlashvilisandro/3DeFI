@@ -20,4 +20,12 @@ public class DevelopersController : ControllerBase
         await _developersService.UploadProject(file);
         return Ok();
     }
+
+    [HttpGet("project")]
+    [Authorize(AuthenticationSchemes = "UserAuth")]
+    public async Task<IActionResult> GetProjectById(int projectId)
+    {
+        var res = await _developersService.GetProjectById(projectId);
+        return Ok(res);
+    }
 }
