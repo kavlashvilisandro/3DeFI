@@ -1,4 +1,4 @@
-namespace _3DeFI.API.Infrastructure.Models;
+namespace _3DeFI.API.Application;
 
 public class NewUserRequestModel
 {
