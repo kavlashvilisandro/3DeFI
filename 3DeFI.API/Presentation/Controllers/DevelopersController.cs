@@ -15,7 +15,7 @@ public class DevelopersController : ControllerBase
     }
     [HttpPost("project")]
     [Authorize(AuthenticationSchemes = "UserAuth")]
-    public async Task<IActionResult> UploadProject(IFormFile file, [FromHeader(Name = "Authorization")] string Authorization)
+    public async Task<IActionResult> UploadProject(IFormFile file)
     {
         await _developersService.UploadProject(file);
         return Ok();
