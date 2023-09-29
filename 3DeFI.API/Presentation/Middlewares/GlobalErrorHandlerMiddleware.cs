@@ -26,6 +26,7 @@ public class GlobalErrorHandlerMiddleware
             context.Response.StatusCode = 500;
             context.Response.ContentType = "application/json";
             await context.Response.WriteAsJsonAsync(new { ErrorMessage = ex.Message });
+            Console.WriteLine(ex.StackTrace);//Delete
         }
     }
 }

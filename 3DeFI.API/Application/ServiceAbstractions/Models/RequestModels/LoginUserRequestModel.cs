@@ -1,6 +1,6 @@
-namespace _3DeFI.API.Infrastructure.Models;
+namespace _3DeFI.API.Application;
 
-public class NewUserRequestModel
+public class LoginUserRequestModel
 {
     public string UserName { get; set; }
     public string Password { get; set; }

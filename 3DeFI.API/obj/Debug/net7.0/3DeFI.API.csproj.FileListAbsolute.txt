@@ -30,3 +30,14 @@
 /home/sandro/Desktop/3DeFI/3DeFI.API/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /home/sandro/Desktop/3DeFI/3DeFI.API/obj/Debug/net7.0/3DeFI.API.MvcApplicationPartsAssemblyInfo.cs
 /home/sandro/Desktop/3DeFI/3DeFI.API/obj/Debug/net7.0/3DeFI.API.csproj.CopyComplete
+/home/sandro/Desktop/3DeFI/3DeFI.API/bin/Debug/net7.0/Dapper.dll
+/home/sandro/Desktop/3DeFI/3DeFI.API/bin/Debug/net7.0/Mapster.dll
+/home/sandro/Desktop/3DeFI/3DeFI.API/bin/Debug/net7.0/Mapster.Core.dll
+/home/sandro/Desktop/3DeFI/3DeFI.API/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/sandro/Desktop/3DeFI/3DeFI.API/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/sandro/Desktop/3DeFI/3DeFI.API/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/home/sandro/Desktop/3DeFI/3DeFI.API/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/home/sandro/Desktop/3DeFI/3DeFI.API/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/sandro/Desktop/3DeFI/3DeFI.API/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/home/sandro/Desktop/3DeFI/3DeFI.API/bin/Debug/net7.0/Npgsql.dll
+/home/sandro/Desktop/3DeFI/3DeFI.API/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
