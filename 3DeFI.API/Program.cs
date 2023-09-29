@@ -40,9 +40,9 @@ builder.Services.AddAuthentication()
         };
         options.Events = new JwtBearerEvents()
         {
-            OnMessageReceived = async (MessageReceivedContext x) =>
+            OnMessageReceived = async (MessageReceivedContext ctx) =>
             {
-                
+                ctx.Token = ctx.Request.Headers["Authorization"];
             }
         };
     }));
