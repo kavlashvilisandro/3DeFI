@@ -1,5 +1,6 @@
 using System.Text;
 using _3DeFI.API.Application;
+using _3DeFI.API.Infrastructure;
 using _3DeFI.API.Presentation;
 using Microsoft.IdentityModel.Tokens;
 
@@ -9,6 +10,11 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<IJWTService, JWTService>();
 
 //Repos
+builder.Services.AddSingleton<IAuthRepository, AuthRepository>();
+
+
+
+
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddAuthentication()
