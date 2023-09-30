@@ -6,7 +6,16 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddControllers();
+
+builder.Services.AddCors(a =>
+{
+    a.AddPolicy("defaultPolicy", c =>
+    {
+        c.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    });
+});
 
 
 //Services
@@ -49,6 +58,7 @@ builder.Services.AddAuthentication()
 
 var app = builder.Build();
 
+app.UseCors("defaultPolicy");
 app.UseMiddleware<GlobalErrorHandlerMiddleware>();
 
 app.UseRouting();

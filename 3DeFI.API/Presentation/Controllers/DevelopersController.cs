@@ -22,10 +22,11 @@ public class DevelopersController : ControllerBase
     }
 
     [HttpGet("project")]
-    [Authorize(AuthenticationSchemes = "UserAuth")]
-    public async Task<IActionResult> GetProjectById(int projectId)
+    //[Authorize(AuthenticationSchemes = "UserAuth")]
+    public async Task<JavaScriptResult> GetProjectById(int projectId)
     {
         var res = await _developersService.GetProjectById(projectId);
-        return Ok(res);
+        var js = new JavaScriptResult(res);
+        return js;
     }
 }

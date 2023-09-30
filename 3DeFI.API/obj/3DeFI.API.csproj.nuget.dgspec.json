@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\levani\\Source\\Repos\\3DeFI\\3DeFI.API\\3DeFI.API.csproj": {}
+    "C:\\Users\\levani\\source\\repos\\3DeFI\\3DeFI.API\\3DeFI.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\levani\\Source\\Repos\\3DeFI\\3DeFI.API\\3DeFI.API.csproj": {
+    "C:\\Users\\levani\\source\\repos\\3DeFI\\3DeFI.API\\3DeFI.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\levani\\Source\\Repos\\3DeFI\\3DeFI.API\\3DeFI.API.csproj",
+        "projectUniqueName": "C:\\Users\\levani\\source\\repos\\3DeFI\\3DeFI.API\\3DeFI.API.csproj",
         "projectName": "3DeFI.API",
-        "projectPath": "C:\\Users\\levani\\Source\\Repos\\3DeFI\\3DeFI.API\\3DeFI.API.csproj",
+        "projectPath": "C:\\Users\\levani\\source\\repos\\3DeFI\\3DeFI.API\\3DeFI.API.csproj",
         "packagesPath": "C:\\Users\\levani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\levani\\Source\\Repos\\3DeFI\\3DeFI.API\\obj\\",
+        "outputPath": "C:\\Users\\levani\\source\\repos\\3DeFI\\3DeFI.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\levani\\AppData\\Roaming\\NuGet\\NuGet.Config",

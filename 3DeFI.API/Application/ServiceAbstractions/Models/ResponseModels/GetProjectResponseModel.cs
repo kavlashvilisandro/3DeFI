@@ -4,4 +4,5 @@
     {
         public string JsCode { get; set; }
     }
+
 }
