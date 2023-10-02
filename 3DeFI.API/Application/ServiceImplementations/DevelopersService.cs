@@ -1,3 +1,4 @@
+using System.Net;
 using _3DeFI.API.Application.ServiceAbstractions.Models.ResponseModels;
 using _3DeFI.API.Domain.Entities;
 using _3DeFI.API.Domain.Exceptions;
@@ -23,37 +24,35 @@ public class DevelopersService : IDevelopersService
     }
     public async Task UploadProject(IFormFile formFile)
     {
-        HttpContext context = _contextAccessor.HttpContext;
-        int userId = Convert.ToInt32(context.User.FindFirst("UserId").Value);
+        //HttpContext context = _contextAccessor.HttpContext;
+        //int userId = Convert.ToInt32(context.User.FindFirst("UserId").Value);
 
-        string fileData;
-        using (StreamReader reader = new StreamReader(formFile.OpenReadStream()))
+        string fileExtension = Path.GetExtension(formFile.FileName).ToLower();
+        if (fileExtension != ".html")
+            throw new IncorrectFileType();
+        using (var stream = new FileStream(_config.GetValue<string>("StaticFilesDirectory") + formFile.FileName, FileMode.Create))
         {
-            fileData = await reader.ReadToEndAsync();
+            await formFile.CopyToAsync(stream);
         }
+        /*
         using (NpgsqlConnection connection = new NpgsqlConnection(_config.GetConnectionString("Default")))
         {
             await connection.OpenAsync();
             await _developersRepo.UploadFile(userId, fileData, connection);
         }
+        */
     }
 
-    public async Task<string> GetProjectById(int id)
+    public async Task<HttpResponseMessage> GetProjectByName(string fileName)
     {
-        //HttpContext context = _contextAccessor.HttpContext;
-        //int userId = Convert.ToInt32(context.User.FindFirst("UserId").Value);
+        string filePath = Path.Combine(_config.GetValue<string>("StaticFilesDirectory"), fileName);
+        var response = new HttpResponseMessage(HttpStatusCode.OK);
+        var fileStream = new FileStream(filePath, FileMode.Open);
+        response.Content = new StreamContent(fileStream);
+        response.Content.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("attachment");
+        response.Content.Headers.ContentDisposition.FileName = fileName;
 
-        using (NpgsqlConnection connection = new NpgsqlConnection(_config.GetConnectionString("Default")))
-        {
-            await connection.OpenAsync();
-            ProjectEntity project = await _developersRepo.GetById(id, connection);
-            if (project == null)
-                throw new RecourceDoesntExist();
-            //if (project.OwnerId != userId)
-            //throw new ForbidenAccess();
-
-            return project.JsCode;
-        }
+        return response;
 
     }
 }

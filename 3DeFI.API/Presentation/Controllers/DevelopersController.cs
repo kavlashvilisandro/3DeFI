@@ -1,3 +1,4 @@
+using System.Net;
 using _3DeFI.API.Application;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -14,7 +15,7 @@ public class DevelopersController : ControllerBase
         _developersService = developersService;
     }
     [HttpPost("project")]
-    [Authorize(AuthenticationSchemes = "UserAuth")]
+    //[Authorize(AuthenticationSchemes = "UserAuth")]
     public async Task<IActionResult> UploadProject(IFormFile file)
     {
         await _developersService.UploadProject(file);
@@ -23,10 +24,8 @@ public class DevelopersController : ControllerBase
 
     [HttpGet("project")]
     //[Authorize(AuthenticationSchemes = "UserAuth")]
-    public async Task<JavaScriptResult> GetProjectById(int projectId)
+    public async Task<HttpResponseMessage> GetProjectByName(string fileName)
     {
-        var res = await _developersService.GetProjectById(projectId);
-        var js = new JavaScriptResult(res);
-        return js;
+        return await _developersService.GetProjectByName(fileName);
     }
 }

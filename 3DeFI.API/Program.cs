@@ -58,6 +58,7 @@ builder.Services.AddAuthentication()
 
 var app = builder.Build();
 
+app.UseStaticFiles();
 app.UseCors("defaultPolicy");
 app.UseMiddleware<GlobalErrorHandlerMiddleware>();
 
