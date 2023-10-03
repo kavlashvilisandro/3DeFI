@@ -15,7 +15,7 @@ public class DevelopersController : ControllerBase
         _developersService = developersService;
     }
     [HttpPost("project")]
-    //[Authorize(AuthenticationSchemes = "UserAuth")]
+    [Authorize(AuthenticationSchemes = "UserAuth")]
     public async Task<IActionResult> UploadProject(IFormFile file)
     {
         await _developersService.UploadProject(file);
@@ -23,7 +23,7 @@ public class DevelopersController : ControllerBase
     }
 
     [HttpGet("project")]
-    //[Authorize(AuthenticationSchemes = "UserAuth")]
+    [Authorize(AuthenticationSchemes = "UserAuth")]
     public async Task<HttpResponseMessage> GetProjectByName(string fileName)
     {
         return await _developersService.GetProjectByName(fileName);

@@ -3,6 +3,7 @@ using _3DeFI.API.Application;
 using _3DeFI.API.Infrastructure;
 using _3DeFI.API.Presentation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,6 +29,7 @@ builder.Services.AddSingleton<IDevelopersService, DevelopersService>();
 builder.Services.AddSingleton<IAuthRepository, AuthRepository>();
 builder.Services.AddSingleton<IDevelopersRepository, DevelopersRepository>();
 
+//builder.Services.AddSingleton<IWebHostEnvironment>();
 
 
 builder.Services.AddSwaggerGen();
