@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DeFI.API", "3DeFI.API\3DeFI.API.csproj", "{8F4070D7-F8F3-4D96-A402-FE0FB28FD3CA}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3Digital.API", "3DeFI.API\3Digital.API.csproj", "{8F4070D7-F8F3-4D96-A402-FE0FB28FD3CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +15,8 @@ Global
 		{8F4070D7-F8F3-4D96-A402-FE0FB28FD3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F4070D7-F8F3-4D96-A402-FE0FB28FD3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F4070D7-F8F3-4D96-A402-FE0FB28FD3CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

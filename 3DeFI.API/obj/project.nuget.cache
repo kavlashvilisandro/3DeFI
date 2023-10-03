@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PhOpoFft3xZH3aR6Pm5afZCCHcLYB2uXojmjy22g66kzLjdjATPwMlBj91LdE15kYyjaQ9W8DbH/ebaSvZh4Aw==",
+  "dgSpecHash": "IqGeVKKr02bvgr+ZOVTbiIraLHXMcIZKpu3EEgj7rdbtGBOOnxfVqU6fwaO32edoKALxOtZO3bD/Mt31pRJPfA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\levani\\source\\repos\\3DeFI\\3DeFI.API\\3DeFI.API.csproj",
+  "projectFilePath": "C:\\Users\\levani\\source\\repos\\3DeFI\\3DeFI.API\\3Digital.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\levani\\.nuget\\packages\\dapper\\2.0.151\\dapper.2.0.151.nupkg.sha512",
     "C:\\Users\\levani\\.nuget\\packages\\mapster\\7.4.1-pre01\\mapster.7.4.1-pre01.nupkg.sha512",
